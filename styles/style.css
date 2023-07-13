@@ -80,6 +80,8 @@ table {
 
     font-family:'Poppins', sans-serif;
 
+    --ff: 'Poppins';
+
     --black: #000;
     /* --clr-light: #fff; */
     --clr-mid: #D9D9D9;
@@ -125,6 +127,7 @@ a {
     text-decoration: none;
 	position: relative;
 	font-size: var(--fs-16);
+    /* font-weight: 400; */
 }
 
 a::before {
@@ -153,7 +156,12 @@ a:hover::before {
 	border: 1px solid var(--black);
 	padding: 0.5em;
 
-    
+    font-size: var(--fs-16);
+    font-weight: 400;
+
+    /* letter-spacing: 0.02em; */
+
+    cursor: pointer;
 }
 
 .container {
@@ -267,8 +275,10 @@ a:hover::before {
 		justify-content: center;
 		align-items: center;
 		/* font-size: ; */
+        margin: 0 auto;
 
 		padding: 0.5rem;
+        max-width: 1520px;
 	}
 
 	.header_link {
@@ -283,12 +293,14 @@ a:hover::before {
 @media (min-width: 834px) {
 	.header {
 		display: block;
+        
 	}
 	.navbar {
 		justify-content: space-between;
 		/* font-size: ; */
 
 		padding: 0.25rem 1.5rem;
+        
 	}
 	.nav_btns {
 		display: inline-block;
@@ -303,6 +315,7 @@ a:hover::before {
 @media (min-width: 1440px) {
 	.navbar {
 		padding: 0.25rem 2.5rem;
+        
 	}
 }
 
@@ -413,6 +426,8 @@ a:hover::before {
 
 	
 	font-weight: 300;
+
+    max-width: 1520px;
 }
 
 
@@ -590,7 +605,6 @@ a:hover::before {
 .contact {
 	text-align: center;
 	display: flex;
-	/* display: none; */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -600,11 +614,151 @@ a:hover::before {
 	padding-bottom: 7rem; */
 }
 
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--black);
+    width: 100%;
+}
 
-@media (min-width: 390px) {}
-@media (min-width: 640px) {} 
-@media (min-width: 834px) {}
-@media (min-width: 1440px) {}
+.contact_info {
+    background-color: var(--dark-text);
+    color: var(--white);
+    border-bottom: 1px solid var(--black);
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+    text-align: left;
+
+    gap: var(--fs-60);
+
+    padding: var(--fs-60) var(--fs-20);
+
+}
+
+.contact_heading {
+    font-size: var(--fs-30);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80.5%;
+    margin-bottom: var(--fs-30);
+}
+
+.contact_para {
+    font-size: var(--fs-16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+/* ======================== */
+
+/* form */ 
+
+.contact_form {
+    /* width: ; 90% */ 
+    /* max-width: ; 600px */
+    display: flex;
+    flex-direction: column;
+    gap: var(--fs-20);
+    text-align: left;
+    
+
+    padding: var(--fs-60) var(--fs-20);
+
+}
+
+/* .input-group {
+    position: relative;
+} */
+
+input, textarea {
+    width: 100%;
+    padding: var(--fs-30) var(--fs-10) var(--fs-16);
+    outline: none;
+    /* border-bottom: 1px solid var(--black); */
+    border: none;
+    border-bottom: 1px solid var(--black);
+    background-color: var(--white);
+    color: var(--light-text);
+    font-weight: 300;
+    font-size: var(--fs-12);
+    font-family: var(--ff);
+    resize: none;
+    line-height: 180.523%;
+    
+}
+
+input:focus,
+textarea:focus {
+    font-weight: 400;
+}
+
+label {
+    /* height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--light-text);
+    padding: var(--fs-16) var(--fs-12);
+    cursor: text;
+    font-size: var(--fs-12);
+    transition: 0.2s; */
+    display: none;
+}
+
+
+
+@media (min-width: 390px) {
+    .contact_info {
+        gap: var(--fs-100);
+    }
+    .contact_heading {
+        font-size: var(--fs-40);
+    }
+
+    .contact_form {
+        padding: var(--fs-60) var(--fs-20);
+    }
+
+
+}
+@media (min-width: 640px) {
+    input, textarea {
+        font-size: var(--fs-16);
+    }
+} 
+@media (min-width: 834px) {
+    .contact_box {
+        flex-direction: row;
+        max-width: 1520px;
+    
+    }
+    .contact_info {
+        flex-grow: 1;
+    }
+    .contact_form {
+        flex-grow: 1;
+    }
+    
+    input:focus,
+    textarea:focus {
+        font-weight: 300;
+    }
+
+}
+@media (min-width: 1440px) {
+    
+    .contact_info {
+        padding: var(--fs-60);
+    }
+    
+    .contact_form {
+        padding: var(--fs-60);
+    }
+}
 
 
 

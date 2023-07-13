@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
@@ -33,7 +33,7 @@
             </ul>
             <div class="nav_btns">
                 <a href="">Login</a>
-                <a href="" class="btn">Button</a>
+                <button href="#contact" class="btn register_btn">Button</button>
             </div>
 
             
@@ -130,29 +130,33 @@
                 <div class="contact_info">
                     <section class="contact_info-section">
                         <h3 class="contact_heading">CALL US</h3>
-                        <p>Something something</p>
+                        <p class="contact_para">Something something</p>
                     </section>
                     <section class="contact_info-section">
                         <h3 class="contact_heading">LOCATION</h3>
-                        <p>Something something something</p>
+                        <p class="contact_para">Something something something</p>
                     </section>
                     <section class="contact_info-section">
                         <h3 class="contact_heading">THIRD THING</h3>
-                        <p>Something</p>
+                        <p class="contact_para">Something</p>
                     </section>
                 </div>
-                <div class="contact_form">
-                </div>
+                
                 <form action="" class="contact_form">
-                    <label for="name">Name: </label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Enter a valid email"><br><br>
-
-                    <label for="form_message">Enter your message</label>
-                    <textarea id="form_message" name="form_message" placeholder="Enter your message"></textarea>
-
-                    <input type="submit" class="btn" value="Register">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <label for="name">Enter your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Enter a valid email">
+                        <label for="email">Enter a valid email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="form_message" name="form_message" rows="8" placeholder="Enter your message"></textarea>
+                        <label for="form_message">Enter your message</label>
+                    </div>
+                    <!-- <input type="submit" class="btn" value="Register"> -->
+                    <button class="btn register_btn" type="submit">Register</button>
                   </form> 
             </div>
         </section>
