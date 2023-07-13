@@ -154,7 +154,7 @@ a:hover::before {
 	color: var(--dark-text);
 
 	border: 1px solid var(--black);
-	padding: 0.5em;
+	padding: 0.5em 1em;
 
     font-size: var(--fs-16);
     font-weight: 400;
@@ -303,7 +303,11 @@ a:hover::before {
         
 	}
 	.nav_btns {
-		display: inline-block;
+		/* display: inline-block; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
 	}
 
 	.header_menu {
@@ -676,7 +680,7 @@ a:hover::before {
 
 input, textarea {
     width: 100%;
-    padding: var(--fs-30) var(--fs-10) var(--fs-16);
+    padding: var(--fs-16) var(--fs-10);
     outline: none;
     /* border-bottom: 1px solid var(--black); */
     border: none;
@@ -709,6 +713,10 @@ label {
     display: none;
 }
 
+.register_btn {
+	padding: 1em;
+}
+
 
 
 @media (min-width: 390px) {
@@ -721,6 +729,7 @@ label {
 
     .contact_form {
         padding: var(--fs-60) var(--fs-20);
+		/* padding: var(--fs-48) var(--fs-20) var(--fs-60); */
     }
 
 
@@ -739,8 +748,15 @@ label {
     .contact_info {
         flex-grow: 1;
     }
+
+	.contact_heading {
+		margin-top: var(--fs-10);
+	}
+
+
     .contact_form {
         flex-grow: 1;
+		padding: var(--fs-48) var(--fs-20) var(--fs-60);
     }
     
     input:focus,
@@ -750,6 +766,10 @@ label {
 
 }
 @media (min-width: 1440px) {
+
+	.contact_heading {
+		margin-top: var(--fs-20);
+	}
     
     .contact_info {
         padding: var(--fs-60);
