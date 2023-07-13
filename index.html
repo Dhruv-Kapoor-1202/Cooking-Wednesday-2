@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+
+
+    <title>Cooking Wednesday</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="header container">
+        <nav class="navbar">
+            <ul class="header_menu">
+                <li>
+                    <a class="header_link" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="header_link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="header_link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="nav_btns">
+                <a href="">Login</a>
+                <a href="" class="btn">Button</a>
+            </div>
+
+            
+            <!-- hamburger -->
+            <!-- display: block -->
+            <button title="bars" class="hamburger_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                  </svg> 
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav_menu">
+                <li>
+                    <a class="mobile-nav_link" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="mobile-nav_link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="mobile-nav_link" href="#contact">Contact</a>
+                </li>
+                <!-- <li></li>
+                <li></li> -->
+            </ul>
+        </nav>
+    </div>
+
+    
+    <!-- main -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="container hero" id="home">
+            <h1 class="section_heading">COOKING<br>WEDNESDAY</h1>
+            <p class="hero_para">A Critical Thinking approach to Problem Solving</p>
+        </section>   
+
+        <!-- About -->
+
+        <section class="container about section" id="about">
+            <h2 class="section_heading">ABOUT</h2>
+            <p class="about_para">
+                The CodeChef CUIET Chapter in association with the Department of Computer Science and Engineering and in collaboration with @coding.ninjas and @givemycertificate , is thrilled to present “Cooking Wednesday: A Critical Thinking Approach for Problem Solving” on 5th July, 2023 👨‍💻.This innovative national level contest will be shared through a link on the official CodeChef CUIET Chapter handle i.e. @codechef_cuiet and will commence from 4:00 pm.The 3-hour challenge on the Coding Ninjas Platform will comprise mixed MCQs and Coding Questions based on the fundamentals of Data Structures and Algorithms (DSA), aiming to test the knowledge and problem-solving abilities of the contestants from all over India. The objective is to assess participants’ creativity as well as critical thinking abilities and create a sense of healthy competition at a national level 👥.
+            </p>
+            <p class="about_para">
+                Contest link will be provided on Instagram handle
+                <strong>@codechef_cuiet</strong>. <strong>Consecutive Winner</strong> will be awarded with an Instagram shoutout and exciting goodies. Certificate of appreciation will be provided to <strong>Top 5 Contestants</strong>. 
+                <strong>Certificate of Participation will be provided to each participant.</strong>
+            </p>
+            <!-- <p class="about_para">
+                <strong>DATE:</strong>5th July. 2023<br>
+                <strong>MODE:</strong>Online <br>
+                <strong>TIME:</strong>4PM onwards <br>
+                <strong>PLATFORM:</strong>Coding Ninjas
+            </p> -->
+        </section>
+
+        <!-- Our Team -->
+
+        <section class="container team section">
+            <h2 class="section_heading">OUR TEAM</h2>
+            <div class="team_cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="team_name">
+                        <h3 class="card_heading">NAME</h3>
+                        <p class="card_para">Designation</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="team_name">
+                        <h3 class="card_heading">NAME</h3>
+                        <p class="card_para">Designation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+
+        <section class="container contact section" id="contact">
+            <h2 class="section_heading">CONTACT</h2>
+            <div class="contact_box">
+                <div class="contact_info">
+                    <section class="contact_info-section">
+                        <h3 class="contact_heading">CALL US</h3>
+                        <p>Something something</p>
+                    </section>
+                    <section class="contact_info-section">
+                        <h3 class="contact_heading">LOCATION</h3>
+                        <p>Something something something</p>
+                    </section>
+                    <section class="contact_info-section">
+                        <h3 class="contact_heading">THIRD THING</h3>
+                        <p>Something</p>
+                    </section>
+                </div>
+                <div class="contact_form">
+                </div>
+                <form action="" class="contact_form">
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter a valid email"><br><br>
+
+                    <label for="form_message">Enter your message</label>
+                    <textarea id="form_message" name="form_message" placeholder="Enter your message"></textarea>
+
+                    <input type="submit" class="btn" value="Register">
+                  </form> 
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- footer ??? -->
+
+    <footer class="container footer">
+        <h3 class="footer_title">
+            ~ Cooking Wednesday ~
+        </h3>
+    </footer>
+
+
+
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
